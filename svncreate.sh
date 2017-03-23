@@ -1,8 +1,8 @@
 #!/bin/bash
 svnadmin create $1
 rm -r $1/conf
-cp -r /bin/svn/conf $1/conf
-cp /bin/svn/hooks/post-commit $1/hooks/post-commit
+cp -r /bin/svnc/conf $1/conf
+cp /bin/svnc/hooks/post-commit $1/hooks/post-commit
 name=${1##*/}
 name1=${name//\//\\/}
 project=$2/$name
